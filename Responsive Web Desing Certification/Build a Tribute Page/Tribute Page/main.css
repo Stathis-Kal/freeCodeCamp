@@ -1,0 +1,87 @@
+html {
+    /* Setting a base font size of 10px give us easier rem calculations
+       Info: 1rem === 10px, 1.5rem === 15px, 2rem === 20px and so forth
+     */
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+#title {
+    font-family: 'Libre Baskerville', serif;
+    text-align: center;
+    font-size: 5em;
+    margin: 0;
+    padding: 0.2em;
+    padding-bottom: 0;
+}
+
+#desc {
+    font-family: 'Libre Baskerville', serif;
+    text-align: center;
+    font-size: 1em;
+    font-style: italic;
+}
+
+#image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#img-caption {
+    font-style: italic;
+    font-size: 0.6em;
+    margin: 0.5em;
+    text-align: center;
+}
+
+#tribute-info p {
+    padding: 0.5em;
+    margin: 0.09em;
+    line-height: 1.2em;
+}
+
+#tribute-info h2 {
+    font-size: 1em;
+}
+
+#mona-lisa{
+    float: left;
+    margin: 0 1.5em 1.5em 0;
+}
+
+#virtuvian-man{
+    float: left;
+    margin: 0 1.5em 1.5rem 0;
+}
+
+
+body {
+    background: linear-gradient(#c8c3cc, #563f46);
+}
+
+body h2 {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    font-size: 1em;
+    font-style: italic;
+    margin: 0 1.5em 1.5rem 0;
+}
+
+ /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 560px) {
+    #image{
+        max-width: 100%;
+    }
+ }
+
+ /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    #image{
+        max-width: 100%;
+    }
+ }
