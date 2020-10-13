@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#title{
+    color: brown;
+    font-size: 4rem;
+    font-weight: 400;
+    text-align: center;
+    text-shadow: 0.09rem 0.09rem azure;
+}
+
+#description {
+    color: azure;
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-style: italic;
+    text-align: center;
+    text-shadow: 0.09rem 0.09rem brown;
+}
+
+#emailHelp{
+    color: azure !important;
+}
+
+.container{
+    width: 100%;
+    margin: 1.25rem auto 2.5rem auto;
+}
+
+#survey-form{
+    background: rgba(151, 51, 41, 0.719);
+    padding: 2.5rem 0.625rem;
+    border-radius: 0.25rem;
+    font-size: 1.15rem;
+    font-weight: 500;
+    color: whitesmoke;
+
+}
+
+body {
+    background: url(markus-spiske-qjnAnF0jIGk-unsplash.jpg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}

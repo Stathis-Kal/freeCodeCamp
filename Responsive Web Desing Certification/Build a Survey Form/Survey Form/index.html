@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Responsive Web Design Projects - Build a Survey Form. From freeCodeCamp.com"
+    />
+    <meta name="author" content="Stathis Kaloutsidis" />
+    <title>Survey Form</title>
+
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="title">Programming Survey</h1>
+      <p id="description">Tell us about your programming journey!</p>
+
+      <form id="survey-form">
+        <div class="form-group">
+          <label for="name" id="name-label">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Please enter your Name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="email" id="email-label">Email address</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            aria-describedby="emailHelp"
+            placeholder="example@email.com"
+            required
+          />
+          <small id="emailHelp" class="form-text text-muted"
+            >We'll never share your email with anyone else.</small
+          >
+        </div>
+        <div class="form-group">
+          <label for="number" id="number-label">Years of experience</label>
+          <input
+            type="number"
+            name="years of experience"
+            id="number"
+            class="form-control"
+            min="0"
+            max="50"
+            placeholder="Min value is 0 and max 50"
+          />
+        </div>
+        <div class="form-group">
+          <label for="dropdown"
+            >Which option best describes your current role?
+          </label>
+          <select class="form-control" id="dropdown">
+            <option disabled selected>Select Current Role</option>
+            <option>Student</option>
+            <option>Full Time Job</option>
+            <option>Part Time Job</option>
+            <option>Prefer not to say</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>Whats your title?</p>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              name="job-title"
+              type="radio"
+              id="frontend"
+              value="Frontend Developer"
+            />
+            <label class="form-check-label" for="frontend"
+              >Frontend Developer</label
+            >
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              name="job-title"
+              type="radio"
+              id="backend"
+              value="Backend Developer"
+            />
+            <label class="form-check-label" for="backend"
+              >Backend Developer</label
+            >
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              name="job-title"
+              type="radio"
+              id="fullstack"
+              value="Fullstack Developer"
+            />
+            <label class="form-check-label" for="fullstack"
+              >Fullstack Developer</label
+            >
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              name="job-title"
+              type="radio"
+              id="other-job"
+              value="Fullstack Developer"
+            />
+            <label class="form-check-label" for="other-job">Other</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <p>
+            Whats your favorite programming language?
+            <span>(check as many as you like)</span>
+          </p>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="python"
+              value="python"
+            />
+            <label class="form-check-label" for="python">Python</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="C" value="C" />
+            <label class="form-check-label" for="C">C</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="C++"
+              value="C++"
+            />
+            <label class="form-check-label" for="C++">C++</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="C#"
+              value="C#"
+            />
+            <label class="form-check-label" for="C#">C#</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="java"
+              value="java"
+            />
+            <label class="form-check-label" for="java">java</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="Go"
+              value="Go"
+            />
+            <label class="form-check-label" for="Go">Go</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="php"
+              value="php"
+            />
+            <label class="form-check-label" for="php">php</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="Javascript"
+              value="Javascript"
+            />
+            <label class="form-check-label" for="Javascript">Javascript</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="Ruby"
+              value="Ruby"
+            />
+            <label class="form-check-label" for="Ruby">Ruby</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="other"
+              value="other"
+            />
+            <label class="form-check-label" for="other">Other</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="form-text-area"
+            >If you picked the "Other" option in the above questions. Here you
+            can tell us your opion!</label
+          >
+          <textarea
+            class="form-control"
+            id="form-text-area"
+            rows="3"
+          ></textarea>
+        </div>
+        <button id="submit" type="submit" class="btn btn-primary">
+          Submit
+        </button>
+      </form>
+    </div>
+    <!-- script from freeCodeCamp to test if the assessment is correct -->
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
