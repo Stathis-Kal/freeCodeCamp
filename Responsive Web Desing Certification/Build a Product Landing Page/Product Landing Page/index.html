@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Responsive Web Design Projects - Build a Product Landing Page. From freeCodeCamp.com"
+    />
+    <meta name="author" content="Stathis Kaloutsidis" />
+    <title>Product Landing Page</title>
+
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <main>
+        <header id="header">
+          <img
+            id="header-img"
+            src="https://i.imgur.com/NBb9F0j.png"
+            alt="company_logo"
+            width="200"
+            height="200"
+          />
+          <span>The best security solutions in every domain!</span>
+          <nav
+            id="nav-bar"
+            class="navbar fixed-top d-flex navbar-expand-md navbar-dark bg-dark d-flex flex-row justify-content-end"
+          >
+            <a class="navbar-brand nav-link" href="#solutions">Solutions</a>
+            <a class="navbar-brand nav-link" href="#testimonials"
+              >Testimonials</a
+            >
+            <a class="navbar-brand nav-link" href="#pricing">Pricing</a>
+          </nav>
+        </header>
+        <hr>
+        <form
+          id="form"
+          action="https://www.freecodecamp.com/email-submit"
+          method="POST"
+          target="_blank"
+        >
+          <div class="form-group">
+            <label for="email"
+              >Subscribe to our news feed to get the latest information and
+              special promotions. Just use your email address in the form
+              below.</label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="name@example.com"
+              name="email"
+            />
+            <input id="submit" type="submit" />
+          </div>
+        </form>
+        <hr>
+        <section id="solutions"><h4>Our Solutions:</h4>
+          Best Sec S.A. is a company that.. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae autem iste voluptatem non velit harum. Iusto ex et magnam architecto libero ipsam aspernatur quibusdam totam. Nemo sunt non iusto at! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam dignissimos voluptatibus totam eligendi vitae natus ad quasi autem suscipit quisquam? Aperiam temporibus vel rem dolore? Nihil, distinctio? Possimus, aliquid amet. <ul><li> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt commodi repellendus, vel nam porro sapiente laborum vitae perspiciatis cumque neque temporibus, alias impedit quidem iusto illo earum officia fugiat nostrum?</li> <li> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quo doloremque non exercitationem voluptas magnam sapiente perspiciatis adipisci temporibus ratione architecto distinctio nam omnis, vero odit sed cum optio aperiam?</li> </ul> </section>
+        <hr>
+        <section id="testimonials">
+          <h4>What our clients say about us:</h4>
+          You can watch the video below to see some of our costumers
+          testimonials about your products and services.
+          <iframe
+            id="video"
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/tgbNymZ7vqY?rel=0&amp;controls=0&amp;showinfo=0"
+          >
+          </iframe>
+        </section>
+        <hr>
+        <section id="pricing">
+          <h4>Pricing Options:</h4>
+          <p>Below you can see that our services are divided into 3 categories: minum, medium and maximum. See below for more information and when you decide which security is meant for you, click the button to get an exclusie offer for your business!</p>
+          <div class="card-deck">
+            <div class="card  border-danger mb-3">
+              <div class="card-header">Small business</div>
+              <div class="card-body">
+                <h5 class="card-title">Minum Security</h5>
+                <p class="card-text">
+                  This is the minum security services that we offer.
+                  <ol>
+                    <li>Lorem ipsum.</li>
+                    <li>Lorem ipsum.</li>
+                  </ol>
+                </p>
+              </div>
+              <div class="card-footer">
+                <button type="button" class="btn btn-outline-info">
+                  Get an offer!
+                </button>
+              </div>
+            </div>
+            <div class="card border-primary mb-3">
+              <div class="card-header">Medium business</div>
+              <div class="card-body">
+                <h5 class="card-title">Medium Security</h5>
+                <p class="card-text">
+                  This is the medium security services that we offer.
+                  <ol>
+                    <li>Lorem ipsum.</li>
+                    <li>Lorem ipsum.</li>
+                    <li>Lorem ipsum dolor.</li>
+                  </ol>
+                </p>
+              </div>
+              <div class="card-footer">
+                <button type="button" class="btn btn-outline-info">
+                  Get an offer!
+                </button>
+              </div>
+            </div>
+            <div class="card border-success mb-3">
+              <div class="card-header">Enterprises</div>
+              <div class="card-body">
+                <h5 class="card-title">Maximum Security</h5>
+                <p class="card-text">
+                  This is the Maximum security services that we offer.
+                  <ol>
+                    <li>Lorem ipsum.</li>
+                    <li>Lorem ipsum.</li>
+                    <li>Lorem ipsum dolor.</li>
+                    <li>Lorem ipsum.</li>
+                    <li>Lorem ipsum dolor.</li>
+                    <li>Lorem ipsum.</li>
+                  </ol>
+                </p>
+              </div>
+              <div class="card-footer">
+                <button type="button" class="btn btn-outline-info">
+                  Get an offer!
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <!-- script from freeCodeCamp to test if the assessment is correct -->
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
